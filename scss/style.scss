@@ -1,0 +1,264 @@
+@import'./partials/color';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#header {
+
+    background-image: url(../images/bkg-hero-header.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 1%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &>div {
+        font-family: "Lato", sans-serif;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        gap: 300px;
+
+        div {
+            width: 150px;
+
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+
+            font-weight: 600;
+            justify-content: center;
+            color: $color-white;
+            list-style-type: none;
+
+        }
+    }
+
+    h1 {
+        @include flex;
+        font-family: "Poppins", sans-serif;
+        margin-top: 13%;
+        font-size: 80px;
+        margin-bottom: 0px;
+        color: $color-white;
+
+        div {
+            width: 15px;
+            height: 15px;
+            background: #FFB81C;
+            margin-top: 35px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+
+    p {
+
+        @include flex;
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        color: $color-white;
+        font-size: 20px;
+        padding-left: 30%;
+        padding-right: 30%;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 0px;
+
+    }
+
+    div:last-child {
+
+        gap: 50px;
+
+        a {
+            font-family: "Lato", sans-serif;
+            font-weight: 600;
+            width: 250px;
+            height: 40px;
+            text-align: center;
+            border: solid 2px;
+            color: white;
+            text-decoration: none;
+            padding-top: 12px;
+            gap: 10px;
+
+            &:nth-child(1) {
+
+                border-color: white;
+                background-color: #595e63;
+            }
+
+            &:nth-child(2) {
+                border-color: #FFB81C;
+                background-color: #ffb81c;
+            }
+
+        }
+
+    }
+
+
+}
+
+#about {
+    div {
+        @include flex;
+        flex-direction: column;
+        font-family: "Lato", sans-serif;
+        color: #545454;
+
+        h2 {
+            font-size: 40px;
+            font-weight: 800;
+        }
+
+        p {
+            text-align: center;
+            padding-left: 30%;
+            padding-right: 30%;
+            color: lighten($color: #545454, $amount: 30);
+        }
+
+    }
+}
+
+#projects {
+
+    div {
+        background: repeating-linear-gradient(-45deg, rgba(204, 204, 204, 0.3), rgba(204, 204, 204, 0.3) 1px, rgba(238, 238, 238, 0.3) 1px, #eeeeee80 5px);
+        font-family: "Lato", sans-serif;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+
+        h2 {
+            font-size: 40px;
+            font-weight: 800;
+            color: #545454;
+        }
+
+        p {
+
+            padding-left: 30%;
+            padding-right: 30%;
+            color: lighten($color: #545454, $amount: 30);
+        }
+
+    }
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+
+    img {
+        width: 25%;
+
+    }
+
+}
+
+
+
+#Testimonials {
+    background-image: url(../images/bkg-testimonial.jpg);
+    padding-top: 2%;
+
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Lato", sans-serif;
+
+        h2 {
+
+            color: white;
+        }
+
+        img {
+            border-radius: 90px;
+        }
+
+
+
+
+        p {
+            text-align: center;
+            margin-left: 30%;
+            margin-right: 30%;
+            color: white;
+
+        }
+
+        h4 {
+            color: white;
+        }
+    }
+
+}
+
+#services {
+
+    >div {
+        font-family: "Lato", sans-serif;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: #545454;
+
+        h2 {
+            font-size: 35px;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        svg {
+            height: 50px;
+        }
+    }
+
+    div:last-child {
+
+        display: flex;
+        flex-direction: row;
+
+        >div {
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            h3:first-of-type{
+                color:red;
+            }
+            h3:nth-of-type(1){
+                color:blue;
+                
+
+            }
+
+        }
+
+    }
+
+}
