@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-body {
+body,
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box; }
@@ -52,24 +53,24 @@ body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     padding-left: 30%;
     padding-right: 30%;
     text-align: center;
-    margin-bottom: 50px;
-    margin-top: 0px; }
+    margin-bottom: 70px;
+    margin-top: 20px; }
   #header div:last-child {
     gap: 50px; }
     #header div:last-child a {
       font-family: "Lato", sans-serif;
       font-weight: 600;
-      width: 250px;
-      height: 40px;
+      width: 15rem;
+      height: 4rem;
       text-align: center;
-      border: solid 2px;
+      border: solid 3px;
       color: white;
       text-decoration: none;
-      padding-top: 12px;
+      padding-top: 3%;
       gap: 10px; }
       #header div:last-child a:nth-child(1) {
         border-color: white;
@@ -86,9 +87,12 @@ body {
   font-family: "Lato", sans-serif;
   color: #545454; }
   #about div h2 {
+    padding-top: 50px;
     font-size: 40px;
     font-weight: 800; }
   #about div p {
+    padding-top: 50px;
+    padding-bottom: 70px;
     text-align: center;
     padding-left: 30%;
     padding-right: 30%;
@@ -101,38 +105,53 @@ body {
   flex-direction: column;
   display: flex; }
   #projects div h2 {
+    padding-top: 50px;
     font-size: 40px;
     font-weight: 800;
     color: #545454; }
   #projects div p {
+    padding-top: 50px;
+    padding-bottom: 80px;
     padding-left: 30%;
     padding-right: 30%;
     color: #a1a1a1; }
 
-article {
+#projects article {
   display: flex;
   flex-direction: row; }
-  article img {
+  #projects article img {
     width: 25%; }
 
 #Testimonials {
   background-image: url(../images/bkg-testimonial.jpg);
-  padding-top: 2%; }
+  background-repeat: no-repeat;
+  background-size: cover; }
   #Testimonials div {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: "Lato", sans-serif; }
     #Testimonials div h2 {
-      color: white; }
+      padding-top: 50px;
+      padding-bottom: 70px;
+      color: white;
+      font-size: 50px; }
     #Testimonials div img {
+      margin-bottom: 70px;
       border-radius: 90px; }
     #Testimonials div p {
+      font-family: "Lato", sans-serif;
+      background-color: #6a4d8a;
+      padding: 30px;
       text-align: center;
       margin-left: 30%;
       margin-right: 30%;
       color: white; }
     #Testimonials div h4 {
+      font-family: "Lato", sans-serif;
+      font-size: 25px;
+      margin-top: 40px;
+      margin-bottom: 100px;
       color: white; }
 
 #services > div {
@@ -140,23 +159,216 @@ article {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  color: #545454; }
+  color: #545454;
+  padding-top: 70px; }
   #services > div h2 {
     font-size: 35px;
     text-align: center; }
   #services > div p {
+    padding-top: 30px;
     text-align: center; }
   #services > div svg {
     height: 50px; }
 
 #services div:last-child {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  padding-left: 30px;
+  padding-right: 30px; }
   #services div:last-child > div {
+    text-align: center;
     justify-content: center;
     flex-direction: column;
-    text-align: center; }
-    #services div:last-child > div h3:first-of-type {
-      color: red; }
-    #services div:last-child > div h3:nth-of-type(1) {
-      color: blue; }
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 100px;
+    padding-left: 30px;
+    padding-right: 30px; }
+    #services div:last-child > div:nth-child(1) svg {
+      fill: #f18b6d; }
+    #services div:last-child > div:nth-child(1) h3 {
+      color: #f18b6d; }
+    #services div:last-child > div:nth-child(1) p {
+      color: #545454; }
+    #services div:last-child > div:nth-child(2) svg {
+      fill: #ffb81c; }
+    #services div:last-child > div:nth-child(2) h3 {
+      color: #ffb81c; }
+    #services div:last-child > div:nth-child(2) p {
+      color: #545454; }
+    #services div:last-child > div:nth-child(3) svg {
+      fill: #6a4d8a; }
+    #services div:last-child > div:nth-child(3) h3 {
+      color: #6a4d8a; }
+    #services div:last-child > div:nth-child(3) p {
+      color: #545454; }
+
+#lastnews {
+  background-color: #222f36; }
+  #lastnews div {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: "Lato", sans-serif; }
+    #lastnews div:nth-child(1) h2 {
+      font-size: 50px;
+      font-weight: 800;
+      color: white; }
+    #lastnews div:nth-child(1) p {
+      color: #719597; }
+    #lastnews div:nth-child(2) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 100px; }
+      #lastnews div:nth-child(2) a {
+        text-decoration: none;
+        font-weight: 800;
+        font-family: "Lato", sans-serif;
+        padding-top: 5px;
+        height: 25px;
+        width: 150px;
+        color: aliceblue;
+        background-color: #FFB81C; }
+    #lastnews div:nth-child(3) {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      margin-bottom: 100px; }
+      #lastnews div:nth-child(3) article {
+        width: 350px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column; }
+        #lastnews div:nth-child(3) article img {
+          width: 100%; }
+        #lastnews div:nth-child(3) article h3 {
+          padding-top: 50px;
+          font-family: "Lato", sans-serif;
+          color: #5e5e5e;
+          font-weight: 800;
+          font-size: 30px;
+          padding-left: 30px;
+          padding-right: 30px; }
+        #lastnews div:nth-child(3) article p {
+          padding-top: 50px;
+          margin-left: 20px;
+          margin-right: 20px;
+          font-family: "Lato", sans-serif;
+          color: #5e5e5e; }
+        #lastnews div:nth-child(3) article a {
+          padding-top: 50px;
+          padding-bottom: 100px;
+          text-decoration: none;
+          color: #ffb865; }
+          #lastnews div:nth-child(3) article a svg {
+            fill: #ffb865;
+            height: 10px; }
+
+#stat {
+  font-family: "Lato", sans-serif;
+  background-image: url(../images/bkg-counter.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 3%;
+  color: white;
+  text-align: center; }
+  #stat > div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #stat > div div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      #stat > div div h3 {
+        font-weight: 800;
+        font-size: 1, 7em; }
+      #stat > div div p {
+        font-size: 4em;
+        text-transform: uppercase;
+        font-weight: 900; }
+      #stat > div div:nth-child(2) {
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        padding: 0 10% 0 10%;
+        margin: 0 5% 0 5%; }
+
+#contact {
+  padding: 5% 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Lato", sans-serif; }
+  #contact > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #919191; }
+    #contact > div h2 {
+      padding-bottom: 60px;
+      font-size: 2em;
+      font-weight: 900;
+      color: #5e5e5e; }
+    #contact > div div {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 20px; }
+      #contact > div div > div {
+        display: flex;
+        flex-direction: row; }
+        #contact > div div > div h5 {
+          color: #ffb81c;
+          font-size: smaller;
+          font-weight: 400;
+          border-right: 1px solid #d9d9d9;
+          padding: 0 4% 0 0;
+          margin: 0 2% 0 0; }
+        #contact > div div > div p {
+          font-size: 0.8em;
+          line-height: 1.5; }
+        #contact > div div > div :nth-child(3) {
+          display: flex;
+          justify-content: end;
+          gap: 10px; }
+        #contact > div div > div img {
+          object-fit: contain;
+          width: 0.9em; }
+      #contact > div div > form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 6px; }
+        #contact > div div > form > div {
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          font-size: 0.9em; }
+          #contact > div div > form > div div {
+            display: flex;
+            flex-direction: column;
+            gap: 6px; }
+            #contact > div div > form > div div input {
+              border: 1px solid #d9d9d9;
+              border-radius: 2px;
+              padding: 6px; }
+        #contact > div div > form :nth-last-child(2) {
+          display: flex;
+          flex-direction: column; }
+          #contact > div div > form :nth-last-child(2) textarea {
+            border: 1px solid #d9d9d9;
+            border-radius: 2px; }
+        #contact > div div > form :nth-child(3) {
+          display: flex;
+          justify-content: end; }
+          #contact > div div > form :nth-child(3) [value] {
+            background-color: #ffb81c;
+            border: none;
+            border-radius: 4px;
+            padding: 1% 6%;
+            color: white; }
